@@ -18,8 +18,9 @@
   padding-bottom: 10px;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   background-color: var(--dark);
-  opacity: 0.98;
+  opacity: 0.90;
   color: var(--light);
+  z-index: 5;
 }
 
 .header h1 {
