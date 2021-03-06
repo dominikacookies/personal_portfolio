@@ -1,0 +1,36 @@
+/* Tese are styles for the header */
+header {
+  padding: 20px;
+  padding-left: 50px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  background-color: #202020;
+  color: #ffffff;
+}
+
+header h1 {
+  display: inline-block;
+}
+
+header nav {
+  margin-right: 50px;
+  float: right;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+header nav li {
+  display: inline-block;
+  margin-left: 35px;
+}
+
+header a {
+  color:#ffffff
+}
+
+main {
+  background-color: #ffffff;
+  padding-top: 15px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 15px;
+}
+
