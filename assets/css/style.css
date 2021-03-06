@@ -3,6 +3,9 @@
   --light: #ffffff;
 }
 
+* {
+  box-sizing: border-box;
+}
 
 /* These are styles for the header */
 .header {
@@ -34,26 +37,43 @@
   color:#ffffff
 }
 
+/* These are styles for the main section */
 main {
   background-color: #ffffff;
   text-align: center;
 }
 
+.large-text1 {
+  font-size: 100px;
+}
+
+.large-text2 {
+  font-size: 80px;
+}
+
 /* These are styles for the about section */
-#about {
+.about {
   height: 95vh;
   width: 100vw;
   display: flex;
   align-items: center;
   background-color: beige;
+  padding: 40px;
+  border: solid red 3px;
 }
 
-#about img{
+.about__image{
   width: 50vw;
+  border: solid red 3px;
+  padding: 20px;
 }
 
-#about img{
+.about__text{
   width: 50vw;
+  text-align: left;
+  font-size: 16px;
+  border: solid red 3px;
+  padding: 20px;
 }
 
 .USPs {
