@@ -1,50 +1,83 @@
-/* Tese are styles for the header */
-header {
+:root {
+  --dark: #202020;
+  --light: #ffffff;
+}
+
+
+/* These are styles for the header */
+.header {
   padding-top: 10px;
   padding-right: 20px;
   padding-left: 50px;
   padding-bottom: 10px;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  background-color: #202020;
-  color: #ffffff;
+  background-color: var(--dark);
+  color: var(--light);
 }
 
-header h1 {
+.header h1 {
   display: inline-block;
 }
 
-header nav {
+.header nav {
   margin-right: 50px;
   float: right;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-header nav li {
+.header nav li {
   display: inline-block;
   margin-left: 35px;
 }
 
-header a {
+.header a {
   color:#ffffff
 }
 
 main {
   background-color: #ffffff;
   text-align: center;
-  padding-top: 15px;
-  padding-right: 20px;
-  padding-left: 20px;
-  padding-bottom: 15px;
 }
 
+/* These are styles for the about section */
+#about {
+  height: 95vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  background-color: beige;
+}
+
+#about img{
+  width: 50vw;
+}
+
+#about img{
+  width: 50vw;
+}
+
+.USPs {
+  height: 40vh;
+}
+
+.USPs article {
+  display: inline;
+}
+
+/* These are styles for the portfolio section*/
 .mainproject {
   background-image: url("../images/placeholder1.jpg");
+  height: 90vh;
 }
 
 .project2 {
   background-image: url("../images/placeholder1.jpg");
+  background-position: center;
+  height: 50vh;
 }
 
 .project3 {
   background-image: url("../images/placeholder1.jpg");
+  background-position: center;
+  height: 50vh;
 }
