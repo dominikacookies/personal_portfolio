@@ -18,6 +18,7 @@
   padding-bottom: 10px;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   background-color: var(--dark);
+  opacity: 0.98;
   color: var(--light);
 }
 
@@ -78,9 +79,10 @@ h2 {
 }
 
 .about__image{
-  width: 50vw;
+  width: 42vw;
   border: solid red 3px;
   padding: 20px;
+  border-radius: 50%;
   @media screen and (max-width: 575px) {
     width: 100vw;
   }
@@ -146,7 +148,7 @@ h2 {
 
 .mainproject {
   background-image: url("../images/placeholder1.jpg");
-  height: 90vh;
+  height: 80vh;
   position: relative;
 }
 
