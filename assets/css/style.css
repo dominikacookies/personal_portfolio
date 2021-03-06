@@ -53,8 +53,7 @@ main {
 
 /* These are styles for the about section */
 .about {
-  height: 95vh;
-  width: 100vw;
+  height: 97vh;
   display: flex;
   align-items: center;
   background-color: beige;
@@ -66,6 +65,9 @@ main {
   width: 50vw;
   border: solid red 3px;
   padding: 20px;
+  @media screen and (max-width: 575px) {
+    width: 100vw;
+  }
 }
 
 .about__text{
@@ -74,6 +76,9 @@ main {
   font-size: 16px;
   border: solid red 3px;
   padding: 20px;
+  @media screen and (max-width: 575px) {
+  width: 100vw;
+  }
 }
 
 .USPs {
