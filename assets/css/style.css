@@ -20,6 +20,9 @@
   background-color: var(--dark);
   opacity: 0.90;
   color: var(--light);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   z-index: 5;
 }
 
@@ -31,6 +34,7 @@
   margin-right: 50px;
   float: right;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  align-content: center;
 }
 
 .header nav li {
