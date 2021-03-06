@@ -51,6 +51,15 @@ main {
   font-size: 80px;
 }
 
+.information {
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 30px;
+  padding: 10px;
+}
+
 /* These are styles for the about section */
 .about {
   height: 97vh;
@@ -73,7 +82,6 @@ main {
 .about__text{
   width: 50vw;
   text-align: left;
-  font-size: 16px;
   border: solid red 3px;
   padding: 20px;
   @media screen and (max-width: 575px) {
@@ -81,14 +89,41 @@ main {
   }
 }
 
-.USPs {
-  height: 40vh;
+.about__text .information {
+  padding-top: 20px;
+}
+/* These are styles for the USPs section*/
+.usp {
+  padding-top: 20px;
+  padding-bottom: 30px;
+  background-color: var(--dark);
+  color: var(--light);
 }
 
-.USPs article {
-  display: inline;
+.usp__div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  border: solid;
+  padding: 10px;
 }
 
+.usp__article {
+  display: inline-block;
+  width: 400px;
+  border: solid;
+  @media screen and (max-width: 575px) {
+    width: 100vw;
+    }
+}
+
+.usp h2 {
+  padding-top: 20px;
+}
+
+.usp .information {
+  padding: 10px;
+}
 /* These are styles for the portfolio section*/
 .mainproject {
   background-image: url("../images/placeholder1.jpg");
