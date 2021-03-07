@@ -124,10 +124,9 @@ h2 {
 
 .usp__article {
   display: inline-block;
-  width: 400px;
+  width: 360px;
   border: solid;
-  align-items: center;
-  justify-items: center;
+  margin: 15px;
   @media screen and (max-width: 575px) {
     width: 100vw;
     }
@@ -139,6 +138,7 @@ h2 {
 
 .usp .information {
   padding: 10px;
+  padding-bottom: 0px;
 }
 /* These are styles for the portfolio section*/
 
@@ -152,17 +152,19 @@ h2 {
 }
 
 .mainproject {
-  background-image: url("../images/placeholder1.jpg");
+  background-image: linear-gradient(
+      to bottom,
+      rgb(0,0,0,0.2),
+      rgb(0,0,0,0.8)
+      ),
+    url("../images/placeholder1.jpg");
+  background-repeat: no-repeat;
   height: 80vh;
-  position: relative;
 }
 
 .mainproject__div {
   margin: auto;
   width: 60%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
   background-color: var(--dark);
   opacity: 0.8;
   color: var(--light);
