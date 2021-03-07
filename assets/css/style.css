@@ -1,3 +1,7 @@
+html {
+  font-size:10px;
+}
+
 :root {
   --dark: #202020;
   --light: #ffffff;
@@ -17,6 +21,7 @@
   padding-left: 50px;
   padding-bottom: 10px;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  letter-spacing: 0.1rem;
   background-color: var(--dark);
   opacity: 0.90;
   color: var(--light);
@@ -34,6 +39,7 @@
   margin-right: 50px;
   float: right;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 1.6rem;
   align-content: center;
 }
 
@@ -87,9 +93,27 @@ h2 {
   width: 42vw;
   border: solid red 3px;
   padding: 20px;
+  margin-right: 20px;
   border-radius: 50%;
   @media screen and (max-width: 575px) {
     width: 100vw;
+  }
+}
+
+.about__image--animation {
+  animation: slideinfromleft 2s ease-in-out;
+}
+
+@keyframes slideinfromleft {
+  0% {
+    transform: translateX(-10rem);
+  }
+  70% {
+    transform: translateX(1rem);
+    transform: translateY(-1rem);
+  }
+  100% {
+    transform: translateX(0);
   }
 }
 
@@ -160,15 +184,18 @@ h2 {
     url("../images/placeholder1.jpg");
   background-repeat: no-repeat;
   height: 80vh;
+  position:relative;
 }
 
 .mainproject__div {
-  margin: auto;
-  width: 60%;
   background-color: var(--dark);
   opacity: 0.8;
   color: var(--light);
   border: solid;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
 }
 
 
