@@ -86,27 +86,46 @@ h2 {
 
 /* These are styles for the about section */
 .about {
-  height: 97vh;
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
   align-items: center;
-  padding: 40px;
   border: solid red 3px;
   color: var(--dark);
+  min-height: 90vh;
 }
 
-.about__image{
-  width: 40vw;
+/* Why is the image so big on mobile? tried flex shrink, objext fit, max width etc*/
+.about__image {
   border: solid red 3px;
-  display: inline-block;
-  padding: 20px;
-  margin-right: 20px;
-  border-radius: 50%;
+  background-color: hotpink;
 }
 
-@media screen and (max-width: 575px) 
-  .about__image {width: 100vw;
+.about__image img {
+  padding: 20px;
+  border-radius: 50%;
+  max-width: 55rem;
+}
+
+.about__text{
+  text-align: left;
+  border: solid red 3px;
+  background-color: lawngreen;
+  padding: 20px;
+  max-width: 700px;
+}
+
+/* This does not work */
+@media screen and (max-width: 768px) 
+  .about__text {
+    text-align: center;
   }
+
+.about__text .information {
+  padding-top: 20px;
+}
 
 .about__image--animation {
   animation: slideinfromleft 1s ease-in;
@@ -123,20 +142,6 @@ h2 {
   100% {
     transform: translateX(0);
   }
-}
-
-.about__text{
-  width: 40vw;
-  text-align: left;
-  border: solid red 3px;
-  padding: 20px;
-  @media screen (max-width: 575px){
-    width: 100vw;
-  }
-}
-
-.about__text .information {
-  padding-top: 20px;
 }
 
 /* These are styles for the USPs section*/
