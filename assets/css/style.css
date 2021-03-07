@@ -3,12 +3,16 @@ html {
 }
 
 :root {
-  --dark: #202020;
-  --light: #ffffff;
+  --dark: #6b705c;
+  --light: #fff8e6;
 }
 
 * {
   box-sizing: border-box;
+}
+
+a {
+  text-decoration-line: none;
 }
 
 /* These are styles for the header */
@@ -21,7 +25,7 @@ html {
   padding-left: 50px;
   padding-bottom: 10px;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.15rem;
   background-color: var(--dark);
   opacity: 0.90;
   color: var(--light);
@@ -39,7 +43,7 @@ html {
   margin-right: 50px;
   float: right;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   align-content: center;
 }
 
@@ -49,13 +53,14 @@ html {
 }
 
 .header a {
-  color:#ffffff
+  color: var(--light);
 }
 
 /* These are styles for the main section */
 main {
-  background-color: #ffffff;
+  background-color:  var(--light);
   text-align: center;
+  colour:var(--dark)
 }
 
 .large-text1 {
@@ -84,9 +89,9 @@ h2 {
   height: 97vh;
   display: flex;
   align-items: center;
-  background-color: beige;
   padding: 40px;
   border: solid red 3px;
+  color: var(--dark);
 }
 
 .about__image{
@@ -101,7 +106,7 @@ h2 {
 }
 
 .about__image--animation {
-  animation: slideinfromleft 2s ease-in-out;
+  animation: slideinfromleft 1s ease-in;
 }
 
 @keyframes slideinfromleft {
@@ -110,7 +115,7 @@ h2 {
   }
   70% {
     transform: translateX(1rem);
-    transform: translateY(-1rem);
+
   }
   100% {
     transform: translateX(0);
@@ -188,8 +193,6 @@ h2 {
 }
 
 .mainproject__div {
-  background-color: var(--dark);
-  opacity: 0.8;
   color: var(--light);
   border: solid;
   position: absolute;
