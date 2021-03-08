@@ -7,3 +7,4 @@
 6. how can i better control the image behaviour on mobile?
 I've tried object fit, max widths etc.
 7. Why do my media queries not work AT ALL
+8. The horiseon background image for the main project has white space at the bottom when viewed on iPhone X

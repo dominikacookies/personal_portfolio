@@ -3,8 +3,10 @@ html {
 }
 
 :root {
-  --dark: #6b705c;
+  --dark: #2d2e30;
+  --hover_dark: #1b1c1d;
   --light: #fff8e6;
+  --hover_light: #f8f8f8;
 }
 
 * {
@@ -17,18 +19,14 @@ a {
 
 /* These are styles for the header */
 .header {
-  position: -webkit-sticky; /* Safari */
-  position: sticky;
-  top: 0;
-  padding-top: 10px;
-  padding-right: 20px;
-  padding-left: 50px;
-  padding-bottom: 10px;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   letter-spacing: 0.15rem;
   background-color: var(--dark);
-  opacity: 0.96;
+  opacity: 0.98.5;
   color: var(--light);
+  padding: 2.5rem;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -37,6 +35,7 @@ a {
 
 .header h1 {
   display: inline-block;
+  padding: 0;
 }
 
 .header nav {
@@ -54,6 +53,10 @@ a {
 
 .header a {
   color: var(--light);
+}
+
+.header a:hover {
+  color: var(--hover_light);
 }
 
 /* These are styles for the main section */
@@ -200,8 +203,9 @@ h2 {
       rgb(0,0,0,0.2),
       rgb(0,0,0,0.8)
       ),
-    url("../images/placeholder1.jpg");
+    url("../images/horiseon.png");
   background-repeat: no-repeat;
+  background-position: inherit;
   height: 80vh;
   position:relative;
 }
@@ -214,14 +218,8 @@ h2 {
   transform: translate(-50%,-50%);
 }
 
-
-.project2 {
-  background-image: linear-gradient(
-      to bottom,
-     rgb(0,0,0,0.2),
-     rgb(0,0,0,0.8)
-     ),
-    url("../images/placeholder1.jpg");
+/* These are positioning styles for the non-main projects*/
+.project {
   background-position: center;
   height: 50vh;
   position: relative;
@@ -229,36 +227,40 @@ h2 {
   margin-bottom: 1rem;
 }
 
-.project2__div {
+.project__div {
   color: var(--light);
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
+}
+
+.project2 {
+  background-image: linear-gradient(
+    to bottom,
+   rgb(0,0,0,0.2),
+   rgb(0,0,0,0.8)
+   ),
+  url("../images/placeholder1.jpg");
 }
 
 .project3 {
   background-image: linear-gradient(
-      to bottom,
-     rgb(0,0,0,0.2),
-     rgb(0,0,0,0.8)
-     ),
-    url("../images/placeholder1.jpg");
-  background-position: center;
-  height: 50vh;
-  position: relative;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-
-.project3__div {
-  color: var(--light);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
+    to bottom,
+   rgb(0,0,0,0.2),
+   rgb(0,0,0,0.8)
+   ),
+  url("../images/placeholder1.jpg");
 }
 
 #contact .large-text2 {
   padding-bottom: 9rem;
+}
+
+#contact a {
+  color: var(--dark)
+}
+
+#contact a:hover {
+  color: var(--hover_dark)
 }
