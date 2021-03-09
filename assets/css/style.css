@@ -34,7 +34,6 @@ a {
 }
 
 .header h1 {
-  display: inline-block;
   padding: 0;
 }
 
@@ -48,7 +47,7 @@ a {
 
 .header nav li {
   display: inline-block;
-  margin-left: 35px;
+  margin-left: 3.5rem;
 }
 
 .header a {
@@ -61,7 +60,7 @@ a {
 
 /* These are styles for the main section */
 main {
-  background-color:  var(--light);
+  background-color: var(--light);
   text-align: center;
   colour:var(--dark)
 }
@@ -98,36 +97,37 @@ h2 {
   border: solid red 3px;
   color: var(--dark);
   min-height: 90vh;
+  background-image: linear-gradient(var(--light),var(--hover_light));
 }
 
-/* Why is the image so big on mobile? tried flex shrink, objext fit, max width etc*/
+/* It'd difficult to get the image and text to render in appropriate proportions on mobile and desktop */
 .about__image {
   border: solid red 3px;
-  background-color: hotpink;
 }
 
 .about__image img {
   padding: 2rem;
   border-radius: 50%;
-  max-width: 55rem;
+  max-width: 65rem;
 }
 
 .about__text{
   text-align: left;
   border: solid red 3px;
-  background-color: lawngreen;
   padding: 2rem;
-  max-width: 70rem;
+  max-width: 55rem;
 }
-
-/* This does not work */
-@media screen and (max-width: 768px) 
-  .about__text {
-    text-align: center;
-  }
 
 .about__text .information {
   padding-top: 20px;
+  font-size: 1.9rem;
+}
+
+/* This does not work */
+@media screen and (max-width: 768px) {
+  .about__text {
+    text-align: center;
+  }
 }
 
 .about__image--animation {
@@ -159,21 +159,19 @@ h2 {
 .usp__container {
   border: solid;
   padding: 1rem;
-  min-height: 40vh;
 }
 
 /* unless width it specified the articles don't appear next to eachother on desktop when using a flexbox*/
 .usp__article {
-  display: inline-block;
   border: solid;
+  display: inline-block;
   margin: 1.5rem;
-  width: 30vw;
+  width: 30%;
 }
 
 @media screen and (max-width: 765px) {
   .usp__article {
-      width: 90vw;
-      display: block;
+      width: 90%;
   }
 }
 
@@ -199,10 +197,9 @@ h2 {
 
 .mainproject {
   background-image: linear-gradient(
-      to bottom,
-      rgb(0,0,0,0.2),
-      rgb(0,0,0,0.8)
-      ),
+    rgb(0,0,0,0.2),
+    rgb(0,0,0,0.8)
+    ),
     url("../images/horiseon.png");
   background-repeat: no-repeat;
   background-position: inherit;
