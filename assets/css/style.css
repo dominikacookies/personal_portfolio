@@ -195,6 +195,16 @@ h2 {
   text-transform: uppercase;
 }
 
+#portfolio button {
+  padding: 1.5rem;
+  margin: 4rem;
+  background-color: var(--dark);
+  color: var(--light);
+  font-weight: bold;
+  font-size: 1.75rem;
+  width: 30%;
+}
+
 .mainproject {
   background-image: linear-gradient(
     rgb(0,0,0,0.2),
