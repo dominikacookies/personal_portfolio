@@ -217,6 +217,18 @@ h2 {
   position:relative;
 }
 
+.mainproject:hover {
+  background-image: linear-gradient(
+    rgb(0,0,0,0.7),
+    rgb(0,0,0,0.2)
+    ),
+    url("../images/horiseon.png");
+  background-repeat: no-repeat;
+  background-position: inherit;
+  height: 80vh;
+  position:relative;
+}
+
 .mainproject__div {
   color: var(--light);
   position: absolute;
@@ -224,6 +236,7 @@ h2 {
   left: 50%;
   transform: translate(-50%,-50%);
 }
+
 
 /* Body > Main > Portfolio > Other Projects */
 .project {
@@ -251,11 +264,29 @@ h2 {
   url("../images/placeholder1.jpg");
 }
 
+.project2:hover {
+  background-image: linear-gradient(
+    to bottom,
+   rgb(0,0,0,0.7),
+   rgb(0,0,0,0.2)
+   ),
+  url("../images/placeholder1.jpg");
+}
+
 .project3 {
   background-image: linear-gradient(
     to bottom,
    rgb(0,0,0,0.2),
    rgb(0,0,0,0.8)
+   ),
+  url("../images/placeholder1.jpg");
+}
+
+.project3:hover {
+  background-image: linear-gradient(
+    to bottom,
+   rgb(0,0,0,0.7),
+   rgb(0,0,0,0.2)
    ),
   url("../images/placeholder1.jpg");
 }
