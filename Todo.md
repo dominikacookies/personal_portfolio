@@ -1,10 +1,15 @@
 
-1. why is the media query on the about section not working? 
+1. why is the media query on the about section not working?  No matter the section I tried to put media queries in, i could not get it to work
 2. how to make the usps section stack into a singular column on mobile?
 3. how can I stop other content loading before my pic animation?
-4. Add a favicon
-5. Add meta data
-6. how can i better control the image behaviour on mobile?
-I've tried object fit, max widths etc.
-7. Why do my media queries not work AT ALL
-8. The horiseon background image for the main project has white space at the bottom when viewed on iPhone X
+4. The horiseon background image for the main project has white space at the bottom when viewed on iPhone X
+5. Do I have to update names of project one and two or can I leave them as 'PROJECT 2' placeholder text?
+
+TO DO:
+1. Add a favicon
+2. Add meta data
+3. add more pseudo clases
+4. add buttons to all projects
+5. update all placeholder text with actual text
+6. finalise colour scheme
+7. consolidate css classes

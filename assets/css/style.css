@@ -155,24 +155,22 @@ h2 {
   color: var(--light);
 }
 
-/* will center alignment once responsiveness fixed*/
 .usp__container {
   border: solid;
   padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
 }
 
 /* unless width it specified the articles don't appear next to eachother on desktop when using a flexbox*/
+/* only the first article stack on moobile */
 .usp__article {
   border: solid;
-  display: inline-block;
   margin: 1.5rem;
-  width: 30%;
-}
-
-@media screen and (max-width: 765px) {
-  .usp__article {
-      width: 90%;
-  }
+  width: 36rem;
 }
 
 .usp h2 {
