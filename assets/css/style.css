@@ -17,7 +17,7 @@ a {
   text-decoration-line: none;
 }
 
-/* These are styles for the header */
+/* Body > Header */
 .header {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   letter-spacing: 0.15rem;
@@ -58,7 +58,7 @@ a {
   color: var(--hover_light);
 }
 
-/* These are styles for the main section */
+/* Body > Main */
 main {
   background-color: var(--light);
   text-align: center;
@@ -86,7 +86,7 @@ h2 {
   font-size: 2.5rem;
 }
 
-/* These are styles for the about section */
+/* Body > Main > About */
 .about {
   display: flex;
   flex-direction: row;
@@ -100,7 +100,6 @@ h2 {
   background-image: linear-gradient(var(--light),var(--hover_light));
 }
 
-/* It'd difficult to get the image and text to render in appropriate proportions on mobile and desktop */
 .about__image {
   border: solid red 3px;
 }
@@ -109,6 +108,23 @@ h2 {
   padding: 2rem;
   border-radius: 50%;
   max-width: 65rem;
+}
+
+.about__image--animation {
+  animation: slideinfromleft 1s ease-in;
+}
+
+@keyframes slideinfromleft {
+  0% {
+    transform: translateX(-10rem);
+  }
+  70% {
+    transform: translateX(1rem);
+
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 .about__text{
@@ -130,24 +146,8 @@ h2 {
   }
 }
 
-.about__image--animation {
-  animation: slideinfromleft 1s ease-in;
-}
 
-@keyframes slideinfromleft {
-  0% {
-    transform: translateX(-10rem);
-  }
-  70% {
-    transform: translateX(1rem);
-
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-
-/* These are styles for the USPs section*/
+/* Body > Main > USPs */
 .usp {
   padding-top: 2rem;
   padding-bottom: 3rem;
@@ -173,7 +173,7 @@ h2 {
   width: 36rem;
 }
 
-.usp h2 {
+.usp__h2 {
   padding-top: 2rem;
 }
 
@@ -182,27 +182,29 @@ h2 {
   padding-bottom: 1rem;
 }
 
-/* These are styles for the portfolio section*/
+/* Body > Main > Portfolio */
 
 #portfolio {
   padding-top: 2rem;
   padding-bottom: 3rem;
 }
 
-#portfolio .large-text1{
+.portfolio .large-text1{
   text-transform: uppercase;
 }
 
-#portfolio button {
+.portfolio__button {
   padding: 1.5rem;
-  margin: 4rem;
+  margin: 4rem; 
   background-color: var(--dark);
   color: var(--light);
   font-weight: bold;
   font-size: 1.75rem;
-  width: 30%;
+  width: 35%;
+  border-radius: 1.5rem;
 }
 
+/* Body > Main > Portfolio > Main Project */
 .mainproject {
   background-image: linear-gradient(
     rgb(0,0,0,0.2),
@@ -223,10 +225,10 @@ h2 {
   transform: translate(-50%,-50%);
 }
 
-/* These are positioning styles for the non-main projects*/
+/* Body > Main > Portfolio > Other Projects */
 .project {
   background-position: center;
-  height: 50vh;
+  height: 60vh;
   position: relative;
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -258,6 +260,7 @@ h2 {
   url("../images/placeholder1.jpg");
 }
 
+/* Body > Main > Hover */
 #contact .large-text2 {
   padding-bottom: 9rem;
 }

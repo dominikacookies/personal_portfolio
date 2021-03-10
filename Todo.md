@@ -13,3 +13,4 @@ TO DO:
 5. update all placeholder text with actual text
 6. finalise colour scheme
 7. consolidate css classes
+8. add media query to reduct project text size on mobile
