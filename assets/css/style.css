@@ -26,12 +26,12 @@ a {
   opacity: 0.98.5;
   color: var(--light);
   padding: 2.5rem;
-  position: -webkit-sticky; /* Safari */
-  position: sticky;
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 5;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
 }
 
 .header h1 {
@@ -319,5 +319,20 @@ h2 {
   }
   .about__image img {
     max-width: 40rem
+  }
+} 
+
+@media screen and (max-width: 375px) {
+  .about__text {
+    text-align: center;
+  }
+   #portfolio .large-text1 {
+    font-size: 5rem;
+  }
+  .portfolio__button{
+    width: 20rem;
+  }
+  .about__image img {
+    max-width: 30rem
   }
 } 
