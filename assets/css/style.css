@@ -7,6 +7,7 @@ html {
   --hover_dark: #1b1c1d;
   --light: #fff8e6;
   --hover_light: #f8f8f8;
+  --visited: rgb(46, 41, 3);
 }
 
 * {
@@ -139,14 +140,6 @@ h2 {
   font-size: 1.9rem;
 }
 
-/* This does not work */
-@media screen and (max-width: 768px) {
-  .about__text {
-    text-align: center;
-  }
-}
-
-
 /* Body > Main > USPs */
 .usp {
   padding-top: 2rem;
@@ -193,6 +186,10 @@ h2 {
   text-transform: uppercase;
 }
 
+.portfolio h1 {
+  padding: 5rem;
+}
+
 .portfolio__button {
   padding: 1.5rem;
   margin: 4rem; 
@@ -212,7 +209,7 @@ h2 {
     ),
     url("../images/horiseon.png");
   background-repeat: no-repeat;
-  background-position: inherit;
+  background-position: cover;
   height: 80vh;
   position:relative;
 }
@@ -223,10 +220,6 @@ h2 {
     rgb(0,0,0,0.2)
     ),
     url("../images/horiseon.png");
-  background-repeat: no-repeat;
-  background-position: inherit;
-  height: 80vh;
-  position:relative;
 }
 
 .mainproject__div {
@@ -303,3 +296,28 @@ h2 {
 #contact a:hover {
   color: var(--hover_dark)
 }
+
+#contact a:visited {
+  color: var(--visited)
+}
+
+@media screen and (max-width: 768px) {
+  .about__text {
+    text-align: center;
+  }
+} 
+
+@media screen and (max-width: 576px) {
+  .about__text {
+    text-align: center;
+  }
+   #portfolio .large-text1 {
+    font-size: 5rem;
+  }
+  .portfolio__button{
+    width: 20rem;
+  }
+  .about__image img {
+    max-width: 40rem
+  }
+} 
