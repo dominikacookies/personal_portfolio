@@ -4,13 +4,14 @@
 3. how can I stop other content loading before my pic animation?
 4. The horiseon background image for the main project has white space at the bottom when viewed on iPhone X
 5. Do I have to update names of project one and two or can I leave them as 'PROJECT 2' placeholder text?
+6. Nav bar is no longer sticky
 
 TO DO:
 1. Add a favicon
 2. Add meta data
 3. add more pseudo clases
-4. add buttons to all projects
-5. update all placeholder text with actual text
-6. finalise colour scheme
-7. consolidate css classes
-8. add media query to reduct project text size on mobile
+4. update all placeholder text with actual text
+5. finalise colour scheme
+6. consolidate css classes
+7. add media query to reduce project text size on mobile
+  

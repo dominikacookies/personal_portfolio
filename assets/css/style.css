@@ -95,14 +95,9 @@ h2 {
   justify-content: center;
   align-content: center;
   align-items: center;
-  border: solid red 3px;
   color: var(--dark);
   min-height: 90vh;
   background-image: linear-gradient(var(--light),var(--hover_light));
-}
-
-.about__image {
-  border: solid red 3px;
 }
 
 .about__image img {
@@ -130,7 +125,6 @@ h2 {
 
 .about__text{
   text-align: left;
-  border: solid red 3px;
   padding: 2rem;
   max-width: 55rem;
 }
@@ -149,7 +143,6 @@ h2 {
 }
 
 .usp__container {
-  border: solid;
   padding: 1rem;
   display: flex;
   flex-direction: row;
@@ -158,10 +151,7 @@ h2 {
   align-content: center;
 }
 
-/* unless width it specified the articles don't appear next to eachother on desktop when using a flexbox*/
-/* only the first article stack on moobile */
 .usp__article {
-  border: solid;
   margin: 1.5rem;
   width: 36rem;
 }
@@ -305,6 +295,12 @@ h2 {
   .about__text {
     text-align: center;
   }
+  .header nav {
+    margin-right: 1rem;
+  }
+  .large-text2 {
+    font-size: 7rem;
+  }
 } 
 
 @media screen and (max-width: 576px) {
@@ -320,7 +316,26 @@ h2 {
   .about__image img {
     max-width: 40rem
   }
-} 
+  .usp__article {
+    width: 30rem;
+    padding: 1rem;
+  }
+  .usp__container {
+    padding: 0rem;
+  }
+  .usp__h2 {
+    padding-top: 0.5rem;
+  }
+  .usp .information {
+    padding: 0rem;
+  }
+  .large-text2 {
+    font-size: 6rem;
+  }
+  h1 {
+    padding: 2.5rem;
+  }
+}
 
 @media screen and (max-width: 375px) {
   .about__text {
@@ -335,4 +350,24 @@ h2 {
   .about__image img {
     max-width: 30rem
   }
-} 
+  .usp__article {
+    width: 30rem;
+    padding: 1rem;
+  }
+  .usp__container {
+    padding: 0rem;
+  }
+  .usp__h2 {
+    padding-top: 0.5rem;
+  }
+  .usp .information {
+    padding: 0rem;
+  }
+  .large-text2 {
+    font-size: 6rem;
+  }  
+  h1 {
+    padding: 2.5rem;
+  }
+
+}  
