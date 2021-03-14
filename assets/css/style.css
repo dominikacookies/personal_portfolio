@@ -5,7 +5,7 @@ html {
 :root {
   --dark: #2d2e30;
   --hover_dark: #1b1c1d;
-  --light: #fff8e6;
+  --light: #ece5d3;
   --hover_light: #f8f8f8;
   --visited: rgb(46, 41, 3);
 }
@@ -30,8 +30,8 @@ a {
   justify-content: space-between;
   align-items: center;
   z-index: 5;
-  position: -webkit-sticky; /* Safari */
-  position: sticky;
+  position: fixed;
+  width: 100vw;
 }
 
 .header h1 {
@@ -63,7 +63,8 @@ a {
 main {
   background-color: var(--light);
   text-align: center;
-  colour:var(--dark)
+  colour:var(--dark);
+  padding-top: 8rem; 
 }
 
 .large-text1 {
@@ -208,7 +209,6 @@ h2 {
   background-image: linear-gradient(
     rgb(0,0,0,0.7),
     rgb(0,0,0,0.2)
-    onclick="window.location.href='https://dominikacookies.github.io/SEO_website_refractor/';"
     ),
     url("../images/horiseon.png");
 }
@@ -292,6 +292,8 @@ h2 {
   color: var(--visited)
 }
 
+/* Media queries for site responsiveness */
+/* Tablet */
 @media screen and (max-width: 768px) {
   .about__text {
     text-align: center;
@@ -304,6 +306,7 @@ h2 {
   }
 } 
 
+/* Mobile - max screen size 576px */
 @media screen and (max-width: 576px) {
   .about__text {
     text-align: center;
@@ -336,8 +339,15 @@ h2 {
   h1 {
     padding: 2.5rem;
   }
+  .header {
+    position: unset;
+  }
+  main {
+    padding-top: 1rem;
+  }
 }
 
+/* Mobile - max screen size 375px */
 @media screen and (max-width: 375px) {
   .about__text {
     text-align: center;
@@ -370,5 +380,10 @@ h2 {
   h1 {
     padding: 2.5rem;
   }
-
+  .header {
+    position: unset;
+  }
+  main {
+    padding-top: 1rem;
+  }
 }  

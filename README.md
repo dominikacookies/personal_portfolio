@@ -16,5 +16,13 @@ If you'd like to get in touch, it also contains a link to my LinkedIn profile.
 https://dominikacookies.github.io/personal_portfolio/
 
 ## Desktop Screenshots
+[Website rendered on desktop](.assets/images/../../assets/images/screenshots/desktop.png "Website rendered on desktop")
 
 ## Mobile Screenshots
+[Website rendered on mobile](.assets/images/../../assets/images/screenshots/mobile.png "Website rendered on mobile")
+
+## Videos of Working Page
+
+[Desktop](.assets/videos/../../assets/images/videos/desktopvideo.mov "Desktop")
+
+[Tablet and mobile](.assets/videos/../../assets/images/videos/responsivenessvideo.mov "Tablet and mobile")
