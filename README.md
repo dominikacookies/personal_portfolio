@@ -23,6 +23,6 @@ https://dominikacookies.github.io/personal_portfolio/
 
 ## Videos of Working Page
 
-[Desktop](.assets/videos/../../assets/images/videos/desktopvideo.mov "Desktop")
+[Desktop](.assets/videos/../../assets/videos/desktopvideo.mov "Desktop")
 
-[Tablet and mobile](.assets/videos/../../assets/images/videos/responsivenessvideo.mov "Tablet and mobile")
+[Tablet and mobile](.assets/videos/../../assets/videos/responsivenessvideo.mov "Tablet and mobile")
