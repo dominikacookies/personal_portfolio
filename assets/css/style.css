@@ -295,43 +295,24 @@ h2 {
 /* Media queries for site responsiveness */
 /* Tablet */
 @media screen and (max-width: 768px) {
-  .about__text {
-    text-align: center;
-  }
   .header nav {
     margin-right: 1rem;
   }
   .large-text2 {
     font-size: 7rem;
   }
+  .about__text {
+    text-align: center;
+  }
 } 
 
 /* Mobile - max screen size 576px */
 @media screen and (max-width: 576px) {
-  .about__text {
-    text-align: center;
+  .header {
+    position: unset;
   }
-   #portfolio .large-text1 {
-    font-size: 5rem;
-  }
-  .portfolio__button{
-    width: 20rem;
-  }
-  .about__image img {
-    max-width: 40rem
-  }
-  .usp__article {
-    width: 30rem;
-    padding: 1rem;
-  }
-  .usp__container {
-    padding: 0rem;
-  }
-  .usp__h2 {
-    padding-top: 0.5rem;
-  }
-  .usp .information {
-    padding: 0rem;
+  main {
+    padding-top: 1rem;
   }
   .large-text2 {
     font-size: 6rem;
@@ -339,27 +320,11 @@ h2 {
   h1 {
     padding: 2.5rem;
   }
-  .header {
-    position: unset;
+  .about__image img {
+    max-width: 40rem
   }
-  main {
-    padding-top: 1rem;
-  }
-}
-
-/* Mobile - max screen size 375px */
-@media screen and (max-width: 375px) {
   .about__text {
     text-align: center;
-  }
-   #portfolio .large-text1 {
-    font-size: 5rem;
-  }
-  .portfolio__button{
-    width: 20rem;
-  }
-  .about__image img {
-    max-width: 30rem
   }
   .usp__article {
     width: 30rem;
@@ -374,16 +339,51 @@ h2 {
   .usp .information {
     padding: 0rem;
   }
+   #portfolio .large-text1 {
+    font-size: 5rem;
+  }
+  .portfolio__button{
+    width: 20rem;
+  }
+}
+
+/* Mobile - max screen size 375px */
+@media screen and (max-width: 375px) {
+  .header {
+    position: unset;
+  }
+  main {
+    padding-top: 1rem;
+  }  
   .large-text2 {
     font-size: 6rem;
   }  
   h1 {
     padding: 2.5rem;
   }
-  .header {
-    position: unset;
+  .about__image img {
+    max-width: 30rem
   }
-  main {
-    padding-top: 1rem;
+  .about__text {
+    text-align: center;
+  }
+  .usp__article {
+    width: 30rem;
+    padding: 1rem;
+  }
+  .usp__container {
+    padding: 0rem;
+  }
+  .usp__h2 {
+    padding-top: 0.5rem;
+  }
+  .usp .information {
+    padding: 0rem;
+  }
+   #portfolio .large-text1 {
+    font-size: 5rem;
+  }
+  .portfolio__button{
+    width: 20rem;
   }
 }  
